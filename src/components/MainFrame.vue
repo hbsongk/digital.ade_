@@ -15,21 +15,21 @@ export default {
 <style scoped>
 .frame {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
 }
 .first__frame {
-  background-color: red;
-  width: 33%;
-  height: 1000px;
+  background-color: #8596aa;
+  width: calc(100% / 3);
+  height: 500px;
 }
 .second__frame {
-  background-color: blue;
-  width: 33%;
-  height: 1000px;
+  background-color: #2f5dab;
+  width: calc(100% / 3);
+  height: 500px;
 }
 .third__frame {
-  background-color: white;
-  width: 33%;
-  height: 1000px;
+  background-color: #0f2d4a;
+  width: calc(100% / 3);
+  height: 500px;
 }
 </style>

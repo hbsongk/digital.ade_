@@ -19,12 +19,10 @@ export default {
   },
 };
 </script>
-<style scoped>
-* {
-  background-color: black;
-}
+<style>
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "ABeeZee", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -39,7 +37,9 @@ nav {
 nav a {
   font-weight: bold;
 }
-
+nav a.router-link {
+  color: white;
+}
 nav a.router-link-exact-active {
   color: #42b983;
 }

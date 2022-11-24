@@ -1,6 +1,6 @@
 <template>
   <header>
-    <a href="#" class="logo"
+    <a href="/" class="logo"
       ><img
         alt="Digital.ade_ logo"
         src="../assets/logo_digital.ade_.svg"
@@ -8,6 +8,7 @@
     /></a>
     <div class="wrapper__router">
       <router-link
+        style="color: gray; font-size: 20px"
         v-for="{ to, name } in [
           { to: '/', name: 'HOME' },
           { to: '/gallery', name: 'GALLERY' },
@@ -41,17 +42,18 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-family: "ABeeZee", sans-serif;
 }
 .wrapper__router {
   width: 600px;
   display: flex;
   justify-content: space-evenly;
 }
-
 router-link:hover {
   color: red;
 }
