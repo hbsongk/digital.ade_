@@ -1,21 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <nav>
-        <main-header />
-      </nav>
+    <div id="body__wrapper">
+      <div id="nav">
+        <nav>
+          <main-header />
+        </nav>
+      </div>
+      <router-view />
     </div>
-    <router-view />
+    <main-footer style="position: relative; transform: translateY(-100%)" />
   </div>
 </template>
 
 <script>
 import MainHeader from "@/components/MainHeader.vue";
+import MainFooter from "@/components/MainFooter.vue";
 
 export default {
   name: "App",
   components: {
     MainHeader,
+    MainFooter,
   },
 };
 </script>
@@ -28,19 +33,13 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
+#body__wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 100px;
+}
 nav {
   padding: 10px;
   background-color: black;
-}
-
-nav a {
-  font-weight: bold;
-}
-nav a.router-link {
-  color: white;
-}
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>

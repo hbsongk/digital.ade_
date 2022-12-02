@@ -8,7 +8,7 @@
     /></a>
     <div class="wrapper__router">
       <router-link
-        style="color: gray; font-size: 20px"
+        style="color: gray; font-size: 20px; font-weight: bold"
         v-for="{ to, name } in [
           { to: '/', name: 'HOME' },
           { to: '/gallery', name: 'GALLERY' },
